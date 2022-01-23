@@ -1,25 +1,19 @@
 <template>
-  <div
-    class="min-h-screen flex justify-center items-center text-center mx-auto sm:pl-24 bg-yellow-200"
-  >
-    <div class="w-1/2 hidden sm:block m-5 p-6">
-      <img src="undraw_secure_login_pdn4.svg" />
-    </div>
-    <div class="sm:w-1/2 w-4/5">
-      <h2 class="m-5 font-black text-3xl">Social Login</h2>
-      <div class="shadow-xl bg-white p-10">
-        <a
-          href="https://cdn.pentacms.com/connect/github"
-          class="cursor-pointer m-3 button--blue shadow-xl"
-        >
-          <span><font-awesome-icon :icon="['fab', 'google']" /></span>
-          Google
-        </a>
-      </div>
-    </div>
-  </div>
+ 
+      <v-layout align-center justify-center>
+          <v-card>
+              <v-card-text v-if="this.$auth.loggedIn == false"><v-btn  href="https://cdn.pentacms.com/connect/google"><v-icon left>mdi-google</v-icon>Login With Google</v-btn></v-card-text>
+          </v-card>
+      </v-layout>
+ 
 </template>
+
 <script>
-export default {}
+export default {
+
+}
 </script>
-<style lang="scss" scoped></style>
+
+<style>
+
+</style>
