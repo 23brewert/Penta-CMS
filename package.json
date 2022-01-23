@@ -1,0 +1,26 @@
+{
+  "name": "Penta-CMS",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@nuxtjs/auth-next": "^5.0.0-1642755117.7a526bb",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/strapi": "^0.3.5",
+    "core-js": "^3.15.1",
+    "nuxt": "^2.15.7",
+    "nuxt-fontawesome": "^0.4.0",
+    "vue-infinite-loading": "^2.4.5",
+    "vuetify": "^2.5.5"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.12.1"
+  }
+}
