@@ -68,13 +68,13 @@ export default {
   ],
 
   strapi: {
-    entities: [ 'notes', 'users' ],
-    url: 'http://localhost:1337'
+    entities: [ 'users' ],
+    url: 'https://cdn.pentacms.com'
 },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'https://strapi-notesapp.herokuapp.com'
+    baseURL: 'https://cdn.pentacms.com'
 },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
