@@ -13,6 +13,7 @@ export default {
     }
   },
   async mounted() {
+    console.log( this.$route.query)
     const res = await this.$axios.$get(
       `/auth/${this.provider}/callback?access_token=${this.access_token}`
     )
