@@ -1,6 +1,10 @@
 <template>
   <div>
-    <h1>user page</h1>
+    <v-card>
+      <v-card-text>
+        Authorizing... 
+      </v-card-text>
+    </v-card>
   </div>
 </template>
 <script>
@@ -14,7 +18,7 @@ export default {
   },
   async mounted() {
     console.log( this.$route.query)
-    const res = await this.$axios.$get(
+    const res = await this.$axios.$post(
       `/auth/${this.provider}/callback?access_token=${this.access_token}`
     )
     
@@ -23,7 +27,9 @@ export default {
     this.$auth.$storage.setUniversal('jwt', jwt)
     this.$auth.$storage.setUniversal('user', { username: user.username, id: user.id, email: user.email })
 
-    this.$router.push(`/users/${user.id}`)
+
+    console.log(user)
+    this.$router.push(`/dashboard`)
   },
 }
 </script>
