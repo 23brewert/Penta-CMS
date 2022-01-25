@@ -10,6 +10,7 @@
 <script>
 
 export default {
+  auth:false,
   data() {
     return {
       provider: this.$route.params.provider,
