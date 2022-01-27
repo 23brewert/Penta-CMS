@@ -73,12 +73,12 @@ export default {
 
   strapi: {
     entities: [ 'users' ],
-    url: 'https://cdn.pentacms.com'
+    url: 'https://data.pentacms.com'
 },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'https://cdn.pentacms.com'
+    baseURL: 'https://data.pentacms.com'
 },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify

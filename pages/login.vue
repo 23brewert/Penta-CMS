@@ -10,7 +10,7 @@
                   <br>
 
 
-                  <v-btn block  href="https://cdn.pentacms.com/connect/google"><v-icon left>mdi-google</v-icon>Login With Google</v-btn></v-card-text>
+                  <v-btn block  href="https://data.pentacms.com/connect/google"><v-icon left>mdi-google</v-icon>Login With Google</v-btn></v-card-text>
           </v-card>
          </v-flex>
       </v-layout>
